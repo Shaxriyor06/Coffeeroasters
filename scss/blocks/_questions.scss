@@ -1,0 +1,94 @@
+.question {
+    text-align: center;
+    background-color: #282f38;
+    border-radius: 8px;
+    position: relative;
+
+    & .question__content {
+        width: 540px;
+        display: block;
+        margin: 0 auto;
+        padding: 100px 0 317px 0;
+
+        & .question__content-title {
+            font-size: 40px;
+            font-family: $font-fraunces;
+            font-weight: 900;
+            line-height: 48px;
+            color: $main-white-text-color;
+        }
+
+        & .question__content-subtitle {
+            width: 545px;
+            margin-top: 32px;
+            font-size: 16px;
+            font-family: $font-barlow;
+            font-weight: 400;
+            line-height: 26px;
+            color: $main-white-text-color;
+            opacity: 80%;
+        }
+    }
+
+    & .question__cards {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        justify-content: center;
+        position: absolute;
+        bottom: -151px;
+        left: 85px;
+
+        & .question__cards-one {
+            width: 350px;
+            background-color: $main-green-color;
+            padding: 72px 0 48px 0;
+            border-radius: 8px;
+            transition: 0.5s;
+
+            & img {
+                width: 72px;
+                height: 72px;
+            }
+
+            & h4 {
+                font-size: 24px;
+                font-family: $font-fraunces;
+                font-weight: 900;
+                line-height: 32px;
+                color: $main-white-text-color;
+                margin: 56px 0 24px 0;
+                transition: 0.5s;
+            }
+
+            & p {
+                width: 255px;
+                font-size: 16px;
+                font-family: $font-barlow;
+                font-weight: 400;
+                line-height: 26px;
+                margin: 0 auto;
+                color: $main-white-text-color;
+                opacity: 80%;
+                transition: 0.5s;
+            }
+        }
+
+        & .question__cards-one:hover {
+            transform: scale(1.1);
+            background-color: $main-white-text-color;
+
+            & h4 {
+                color: $main-black-text-color;
+            }
+
+            & p {
+                color: $main-black-text-color;
+            }
+        }
+
+        & .question__cards-one:active {
+            transform: scale(0.9);
+        }
+    }
+}

@@ -1,0 +1,44 @@
+nav {
+    width: 100%;
+    background-color: $main-white-text-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5px 34px 36px;
+
+    & .navbar__menu {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+
+        & .navbar__menu-item-link {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #83888f;
+            font-size: 12px;
+            font-weight: 700;
+            font-family: $font-barlow;
+            line-height: 15px;
+            letter-spacing: 0.92px;
+        }
+    }
+
+    & .navbar__logo {
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    & .navbar__logo:hover {
+        transform: scale(1.1);
+    }
+
+    & .navbar__logo:active {
+        transform: scale(0.8);
+    }
+}
