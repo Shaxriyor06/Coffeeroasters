@@ -1,0 +1,26 @@
+.about-hero {
+    margin-top: 113px;
+    background-image: url(../../assets/images/about_hero_bg.png);
+    padding: 137px 85px;
+
+    & .about-hero__content {
+        width: 445px;
+
+        & .about-hero__content-title {
+            font-size: 40px;
+            font-family: $font-fraunces;
+            font-weight: 900;
+            line-height: 48px;
+            color: $main-white-text-color;
+        }
+
+        & .about-hero__content-subtitle {
+            width: 445px;
+            margin-top: 24px;
+            font-size: 16px;
+            color: $main-white-text-color;
+            font-family: $font-barlow;
+            line-height: 26px;
+        }
+    }
+}

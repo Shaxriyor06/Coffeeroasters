@@ -1,0 +1,38 @@
+.about-country {
+    padding: 168px 85px 40px 85px;
+
+    & .about-country__title {
+        font-size: 24px;
+        line-height: 32px;
+        font-family: $font-fraunces;
+        font-weight: 900;
+        color: #83888f;
+    }
+
+    & .about-country__table {
+        margin-top: 72px;
+        display: flex;
+        align-items: center;
+        gap: 95px;
+
+        & .about-country__table-list {
+            & .about-country__table-list-item {
+                font-size: 16px;
+                font-family: $font-barlow;
+                font-weight: 400;
+                line-height: 26px;
+                color: $main-black-text-color;
+                margin-top: 5px;
+            }
+
+            & .about-country__table-list-item--bold {
+                font-size: 32px;
+                font-family: $font-fraunces;
+                color: $main-black-text-color;
+                font-weight: 900;
+                line-height: 36px;
+                margin: 45px 0 24px 0;
+            }
+        }
+    }
+}
